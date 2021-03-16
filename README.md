@@ -1,2 +1,2 @@
 # Django-blog
-Created ablog app using django while learning
+Created a blog app using django while learning
