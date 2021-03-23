@@ -36,6 +36,13 @@ urlpatterns = [
         name="password_reset_done"),
     
     path('', include('blog.urls')),
+    
+    
+    path('password-reset-confirm/<uidb64>/<token>/',
+        auth_views.PasswordResetConfirmView.as_view(template_name='users/password_reset_confirm.html'),
+        name="password_reset_confirm"),
+
+    path('', include('blog.urls')),
 
 ]
 
